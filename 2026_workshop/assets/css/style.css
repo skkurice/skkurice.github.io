@@ -435,7 +435,7 @@ a.ob-card:hover { border-color: var(--rule-strong); }
 .timeline { margin: 0; }
 .timeline div { display: grid; grid-template-columns: 8.5rem 1fr; gap: 16px; padding: 7px 0; border-top: 1px solid var(--rule); }
 .timeline div:last-child { border-bottom: 1px solid var(--rule); }
-.timeline dt { font: 400 .9rem/1.6 var(--mono); color: var(--muted); white-space: nowrap; }
+.timeline dt { font: 400 .9rem/1.6 var(--mono); color: var(--muted); white-space: normal; overflow-wrap: anywhere; }
 .timeline dd { margin: 0; }
 @media (max-width: 520px) { .timeline div { grid-template-columns: 1fr; gap: 0; } }
 
@@ -453,3 +453,7 @@ a.ob-card:hover { border-color: var(--rule-strong); }
 .plain-list { list-style: none; padding: 0; margin: 0; }
 .plain-list li { padding: 6px 0; border-top: 1px solid var(--rule); margin: 0; }
 .plain-list li:last-child { border-bottom: 1px solid var(--rule); }
+.pager > * { min-width: 0; }
+.pg-uni, .pg-name { overflow-wrap: anywhere; }
+.presenter > div, .profile-head > div { min-width: 0; }
+.row-meta, .row-name { overflow-wrap: anywhere; }
