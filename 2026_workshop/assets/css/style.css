@@ -438,3 +438,15 @@ a.ob-card:hover { border-color: var(--rule-strong); }
 .timeline dt { font: 400 .9rem/1.6 var(--mono); color: var(--muted); white-space: nowrap; }
 .timeline dd { margin: 0; }
 @media (max-width: 520px) { .timeline div { grid-template-columns: 1fr; gap: 0; } }
+
+/* undergraduate tag next to a name */
+.ug { font-weight: 400; color: var(--muted); }
+
+/* poster session: light tinted block so it stands apart from the talk sessions */
+.session-poster { background: #f6f6f6; border-top-color: var(--rule-strong); padding: 0 18px 6px; margin-left: -18px; margin-right: -18px; }
+.session-poster .talk-row { border-color: #e2e4e0; }
+@media (max-width: 700px) { .session-poster { margin-left: -12px; margin-right: -12px; padding: 0 12px 4px; } }
+
+/* university names in identity colors: larger and a little bolder */
+.label.uni { font-size: .95rem; font-weight: 600; letter-spacing: .05em; }
+.uni-name.uni-skku, .uni-name.uni-rice { font-weight: 600; font-size: 1.04em; }
