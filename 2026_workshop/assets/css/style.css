@@ -71,7 +71,7 @@ p { margin: 0 0 1em; }
 ul, ol, dl { margin: 0; padding: 0; }
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
 .narrow { max-width: var(--wrap); }  /* narrow pages share the left edge of the header and footer */
-.narrow > * { max-width: 920px; }
+.narrow > * { max-width: none; }  /* lists span the header width; long paragraphs keep a readable measure below */
 .muted { color: var(--muted); }
 .tba { color: var(--muted); font-style: italic; }
 .label { font: 500 .8rem/1.4 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0 0 .9em; }
@@ -459,3 +459,7 @@ a.ob-card:hover { border-color: var(--rule-strong); }
 .row-meta, .row-name { overflow-wrap: anywhere; }
 .split.split-even { grid-template-columns: 1fr 1fr; gap: 48px; }
 @media (max-width: 860px) { .split.split-even { grid-template-columns: 1fr; } }
+/* readable line length for running text inside full-width pages */
+.page-head .lead, .prose > p, .abstract p, .affils, .authors, .refs, .detail figcaption { max-width: 52rem; }
+.talk-h1, .profile-h1 { max-width: 60rem; }
+.filters { max-width: 920px; }
