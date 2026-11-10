@@ -450,4 +450,3 @@ a.ob-card:hover { border-color: var(--rule-strong); }
 /* university names in identity colors: larger and a little bolder */
 .label.uni { font-size: .95rem; font-weight: 600; letter-spacing: .05em; }
 .uni-name.uni-skku, .uni-name.uni-rice { font-weight: 600; font-size: 1.04em; }
-.section-white, [data-bg] .section-white { background: #fff; }
