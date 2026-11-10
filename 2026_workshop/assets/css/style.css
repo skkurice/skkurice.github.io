@@ -408,19 +408,23 @@ figcaption { color: var(--muted); font-size: .88rem; margin-top: 10px; }
 .partner-name:hover { text-decoration: underline; text-underline-offset: 3px; }
 .partner-list p { margin: 4px 0 0; color: var(--muted); font-size: .95rem; }
 
-/* Organized by: logo cards */
+/* Organized by: logo cards. Logos share one height and one top line; a name under the logo when the logo has none. */
 .ob-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.ob-card { display: flex; flex-direction: column; border: 1px solid var(--rule); background: #fff; color: var(--ink); text-decoration: none; }
-.ob-mark { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; min-height: 9.5rem; padding: 24px 28px; }
-.ob-mark img { max-width: 100%; max-height: 4.2rem; width: auto; height: auto; }
-.ob-text { font-weight: 600; font-size: 1.15rem; letter-spacing: -.01em; text-align: center; }
-.ob-only { font-size: 1.35rem; line-height: 1.25; }
+.ob-card { display: flex; border: 1px solid var(--rule); background: #fff; color: var(--ink); text-decoration: none; }
+.ob-mark { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 2.6rem 24px 2.2rem; min-height: 10.5rem; }
+.ob-mark img { height: 2.9rem; width: auto; max-width: 100%; object-fit: contain; }
+.ob-text { font-weight: 600; font-size: 1.12rem; letter-spacing: -.01em; text-align: center; line-height: 1.3; }
+.ob-only { font-size: 1.3rem; }
 .ob-only span { display: block; font-weight: 400; font-size: .95rem; color: var(--muted); margin-top: 4px; }
-.ob-cap { border-top: 1px solid var(--rule); padding: 10px 16px; font-size: .88rem; color: var(--muted); text-align: center; }
 a.ob-card:hover { border-color: var(--rule-strong); }
-a.ob-card:hover .ob-cap { color: var(--ink); }
 @media (max-width: 860px) { .ob-grid { grid-template-columns: 1fr; } }
 .name-list .org-name { color: var(--ink); font-weight: 500; text-align: left; font-size: 1rem; }
 .name-list .org-name a { color: var(--ink); text-decoration: none; }
 .name-list .org-name a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .detail.profile { padding-top: 40px; }
+
+/* "pure": white everywhere; sections and page heads are separated by thin rules only */
+[data-bg="pure"] { --bg: #ffffff; --bar: rgba(255, 255, 255, .96); }
+[data-bg="pure"] .page-head, [data-bg="pure"] .section-rule { background: #fff; }
+[data-bg="pure"] .draft { background: #fff; border-bottom: 1px solid var(--rule); }
+[data-bg="pure"] .ob-card { border-color: var(--rule); }
