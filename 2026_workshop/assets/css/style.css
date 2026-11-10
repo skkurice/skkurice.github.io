@@ -379,8 +379,8 @@ figcaption { color: var(--muted); font-size: .88rem; margin-top: 10px; }
 
 /* speaker profile pages */
 .photo { object-position: center 20%; }
-.photo-xl { width: 9rem; height: 11.25rem; filter: none; }
-.profile-head { display: flex; gap: 28px; align-items: flex-end; }
+.photo-xl { width: 12rem; height: 15rem; filter: none; }
+.profile-head { display: flex; gap: 36px; align-items: center; }
 .profile-h1 { font-size: clamp(2rem, 4vw, 2.8rem); margin: 0 0 .25em; }
 .profile-head .row-meta { font-size: 1.02rem; line-height: 1.5; }
 .profile h2 { margin-top: 1.8em; }
@@ -395,7 +395,7 @@ figcaption { color: var(--muted); font-size: .88rem; margin-top: 10px; }
 .name-list .org-name a { white-space: nowrap; }
 @media (max-width: 520px) {
   .profile-head { flex-direction: column; align-items: flex-start; gap: 16px; }
-  .photo-xl { width: 7.5rem; height: 9.4rem; }
+  .photo-xl { width: 10rem; height: 12.5rem; }
 }
 
 /* Academic Partners */
