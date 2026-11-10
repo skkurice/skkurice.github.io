@@ -457,3 +457,5 @@ a.ob-card:hover { border-color: var(--rule-strong); }
 .pg-uni, .pg-name { overflow-wrap: anywhere; }
 .presenter > div, .profile-head > div { min-width: 0; }
 .row-meta, .row-name { overflow-wrap: anywhere; }
+.split.split-even { grid-template-columns: 1fr 1fr; gap: 48px; }
+@media (max-width: 860px) { .split.split-even { grid-template-columns: 1fr; } }
