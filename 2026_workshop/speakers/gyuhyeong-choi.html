@@ -16,7 +16,7 @@
 <div class="draft">Draft for internal review. The title, program, and speaker list are tentative.</div>
 <header class="masthead">
   <div class="wrap masthead-inner">
-    <a class="wordmark" href="../index.html" aria-label="SKKU–Rice Workshop 2026"><span class="ket-logo" aria-hidden="true"><span class="ket uni-skku">|SKKU<svg class="ra" viewBox="0 0 6 20" aria-hidden="true"><polyline points="0.9,1.2 5.1,10 0.9,18.8" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/></svg></span><svg class="ot" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4.2 4.2 15.8 15.8 M15.8 4.2 4.2 15.8" stroke="currentColor" stroke-width="1.7"/></svg><span class="ket uni-rice">|Rice<svg class="ra" viewBox="0 0 6 20" aria-hidden="true"><polyline points="0.9,1.2 5.1,10 0.9,18.8" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/></svg></span></span><span class="wm-rest" aria-hidden="true">Workshop 2026</span></a>
+    <a class="wordmark" href="../index.html" aria-label="SKKU–Rice Workshop 2026"><span class="ket-logo" aria-hidden="true"><span class="ket uni-skku">SKKU</span><span class="ket ket-dash">-</span><span class="ket uni-rice">RICE</span></span><span class="wm-rest" aria-hidden="true">Workshop 2026</span></a>
     <button type="button" class="nav-button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span></button>
     <nav class="nav" id="site-nav" aria-label="Main"><ul><li><a href="../index.html">Home</a></li><li><a href="../program.html">Program</a></li><li><a href="../speakers.html">Speakers</a></li><li><a href="../posters.html" aria-current=page>Posters</a></li><li><a href="../abstracts.html">Abstracts</a></li><li><a href="../organizers.html">Organizers</a></li><li><a href="../venue.html">Venue</a></li><li><a href="../contact.html">Contact</a></li></ul></nav>
   </div>
@@ -28,13 +28,17 @@
   <h1 class="talk-h1">Efficient Post-Selection for General Quantum LDPC Codes</h1>
   <div class="presenter"><div>
     <p class="row-name">GyuHyeong Choi</p>
-    <p class="row-meta">Graduate Student, <span class="uni-name uni-skku">Sungkyunkwan University</span></p>
+    <p class="row-meta">Graduate Student, Department of Quantum Engineering, <span class="uni-name uni-skku">Sungkyunkwan University</span><br><span class="nw">Advisor: Prof. Seok-Hyung Lee</span></p>
     <p class="links"></p></div></div>
   <p class="when"><a href="../program.html#poster">Poster Session and Reception</a> · Day 2 · Dec 4 · 1:45–3:15 pm</p>
 </div></header>
 <div class="wrap narrow">
-  <article class="prose detail"><h2>Abstract</h2><div class="abstract"><p class="tba">Abstract to be announced.</p></div></article>
-  <nav class="pager" aria-label="Previous and next"><a class="pg-prev" href="soo-seong-kim.html"><span class="pg-name">← Soo-Seong Kim</span><span class="pg-uni uni-name uni-skku">Sungkyunkwan University</span></a><span class="pg-mid"><span class="pg-count">Posters · 6 of 13</span><a href="../posters.html">All posters</a></span><a class="pg-next" href="yeonseo-choi.html"><span class="pg-name">YeonSeo Choi →</span><span class="pg-uni uni-name uni-skku">Sungkyunkwan University</span></a></nav>
+  <article class="prose detail"><h2>Abstract</h2><p class="authors"><u>GyuHyeong Choi</u><sup>3</sup> (presenter), reviewing work by Seok-Hyung Lee<sup>1,2</sup>, Lucas H. English<sup>1</sup>, and Stephen D. Bartlett<sup>1</sup></p>
+<ul class="affils"><li><sup>1</sup>Centre for Engineered Quantum Systems, School of Physics, The University of Sydney, Sydney, New South Wales 2006, Australia</li><li><sup>2</sup>Department of Quantum Information Engineering, Sungkyunkwan University, Suwon 16419, Republic of Korea</li><li><sup>3</sup>Department of Quantum Engineering, Sungkyunkwan University</li></ul>
+<div class="abstract"><p>Post-selection improves the reliability of quantum computation by discarding low-confidence runs, at the cost of a reduced acceptance rate. Existing approaches based on the logical gap can become computationally expensive as the number of logical qubits increases. This poster reviews efficient post-selection methods developed by Lee, English, and Bartlett [1] for quantum low-density parity-check codes, using cluster-based metrics obtained from a single decoding run. Numerical simulations with circuit-level noise demonstrate substantial reductions in the logical error rate of accepted runs. For a 12-round memory experiment with the [[144,12,12]] bivariate bicycle code at a physical error rate of 0.1%, the method achieves an approximately 1,000-fold reduction while aborting about 1% of runs. The approach also extends to real-time decoding using a sliding window, enabling early abort decisions during circuit execution.</p></div>
+<figure><img src="../assets/figures/choi_gyuhyeong_fig1.png" alt="" loading="lazy"><figcaption>Figure 1. Conditional logical error rate versus abort rate for the [[72,12,6]] and [[144,12,12]] bivariate bicycle codes under circuit-level noise, using BP+LSD decoding. Reproduced from Figure 1(a) of the extended abstract for [1].</figcaption></figure>
+<ol class="refs"><li>S.-H. Lee, L. H. English, and S. D. Bartlett, “Efficient Post-Selection for General Quantum LDPC Codes,” arXiv:2510.05795 (2025).</li></ol></article>
+  <nav class="pager" aria-label="Previous and next"><a class="pg-prev" href="soo-seong-kim.html"><span class="pg-name">← Soo-Seong Kim</span><span class="pg-uni uni-name uni-skku">Sungkyunkwan University</span></a><span class="pg-mid"><span class="pg-count">Posters · 6 of 14</span><a href="../posters.html">All posters</a></span><a class="pg-next" href="yeonseo-choi.html"><span class="pg-name">YeonSeo Choi →</span><span class="pg-uni uni-name uni-skku">Sungkyunkwan University</span></a></nav>
 </div>
 </main>
 <footer class="footer">
