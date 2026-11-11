@@ -466,3 +466,6 @@ a.ob-card:hover { border-color: var(--rule-strong); }
 /* current positions under the name on speaker pages */
 .head-positions { list-style: none; padding: 0; margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.5; }
 .head-positions li { margin: 0 0 4px; }
+/* let the pointer reach the hero photos (their tooltip carries the photo credit); buttons stay clickable */
+.hero-shade, .hero-center { pointer-events: none; }
+.hero-center a { pointer-events: auto; }
