@@ -463,3 +463,6 @@ a.ob-card:hover { border-color: var(--rule-strong); }
 .page-head .lead, .prose > p, .abstract p, .affils, .authors, .refs, .detail figcaption { max-width: 52rem; }
 .talk-h1, .profile-h1 { max-width: 60rem; }
 .filters { max-width: 920px; }
+/* current positions under the name on speaker pages */
+.head-positions { list-style: none; padding: 0; margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.5; }
+.head-positions li { margin: 0 0 4px; }
