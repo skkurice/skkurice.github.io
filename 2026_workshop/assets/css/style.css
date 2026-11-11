@@ -409,16 +409,16 @@ figcaption { color: var(--muted); font-size: .88rem; margin-top: 10px; }
 .partner-list p { margin: 4px 0 0; color: var(--muted); font-size: .95rem; }
 
 /* Organized by: logo cards. Logos share one height and one top line; a name under the logo when the logo has none. */
-.ob-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.ob-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }  /* 2 x 2: Rice row, then SKKU row (flyer order) */
 .ob-card { display: flex; border: 1px solid var(--rule); background: #fff; color: var(--ink); text-decoration: none; }
-.ob-mark { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 18px; padding: 2.4rem 24px 2.2rem; min-height: 10.5rem; }
-.ob-logo { display: flex; align-items: center; justify-content: center; height: 3rem; width: 100%; }  /* same box for every logo, so logos and names start on one line */
-.ob-logo img { max-height: 100%; max-width: min(100%, 16rem); width: auto; height: auto; }
+.ob-mark { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; padding: 2.2rem 28px; min-height: 9rem; }
+.ob-logo { display: flex; align-items: center; justify-content: center; height: 4.2rem; width: 100%; }  /* same box for every lockup (logos carry their own names) */
+.ob-logo img { max-height: 100%; max-width: min(100%, 26rem); width: auto; height: auto; }
 .ob-text { font-weight: 600; font-size: 1.12rem; letter-spacing: -.01em; text-align: center; line-height: 1.3; }
 .ob-only { font-size: 1.3rem; }
 .ob-only span { display: block; font-weight: 400; font-size: .95rem; color: var(--muted); margin-top: 4px; }
 a.ob-card:hover { border-color: var(--rule-strong); }
-@media (max-width: 860px) { .ob-grid { grid-template-columns: 1fr; } }
+@media (max-width: 860px) { .ob-grid { grid-template-columns: 1fr; } .ob-mark { padding: 1.4rem 14px; min-height: 7rem; } }
 .name-list .org-name { color: var(--ink); font-weight: 500; text-align: left; font-size: 1rem; }
 .name-list .org-name a { color: var(--ink); text-decoration: none; }
 .name-list .org-name a:hover { text-decoration: underline; text-underline-offset: 3px; }
