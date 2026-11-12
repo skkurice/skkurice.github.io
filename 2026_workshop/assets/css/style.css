@@ -479,3 +479,6 @@ a.ob-card:hover { border-color: var(--rule-strong); }
 .hero-shade, .hero-center { pointer-events: none; }
 .hero-center a { pointer-events: auto; }
 .directions + .label { margin-top: 2.2rem; }  /* Venue: space between Rooms and Getting there */
+#campus-map { position: absolute; inset: 0; }
+.pin-label { font: 600 .8rem/1.3 var(--sans, inherit); color: #111; background: #fff; border: 1px solid #111; border-radius: 0; box-shadow: none; padding: 3px 7px; }
+.pin-label::before { display: none; }
