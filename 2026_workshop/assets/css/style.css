@@ -227,6 +227,8 @@ aside .label:not(:first-child) { margin-top: 32px; }
 .t-title { color: var(--ink); font-weight: 500; font-size: .92rem; }  /* same size as the Speakers/Posters list titles */
 .talk-row:hover .t-title { text-decoration: underline; text-underline-offset: 3px; }
 .t-who { color: var(--muted); font-size: .95rem; }
+.day-venue { display: block; margin-top: 4px; font-size: .95rem; font-weight: 400; color: var(--muted); letter-spacing: 0; }
+.remote { white-space: nowrap; }
 
 /* talk detail */
 .talk-h1 { font-size: clamp(1.6rem, 3.2vw, 2.25rem); margin-bottom: 22px; }
