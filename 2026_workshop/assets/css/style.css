@@ -207,10 +207,9 @@ aside .label:not(:first-child) { margin-top: 32px; }
 #f-count { font: 400 .8rem/1 var(--mono); margin-left: auto; color: var(--muted); }
 
 /* program */
-.tabs { display: flex; flex-wrap: wrap; gap: 4px 22px; padding: 18px 0; border-bottom: 1px solid var(--rule); position: sticky; top: 60px; background: var(--bg); z-index: 5; font-size: .92rem; font-weight: 500; }
+.tabs { display: flex; flex-wrap: wrap; gap: 4px 28px; padding: 18px 0; border-bottom: 1px solid var(--rule); position: sticky; top: 60px; background: var(--bg); z-index: 5; font-size: .92rem; font-weight: 500; }
 .tabs a { text-decoration: none; color: var(--ink); }
 .tabs a:hover { text-decoration: underline; text-underline-offset: 3px; }
-.tabs a:last-child { margin-left: auto; }
 .day { padding-top: 36px; scroll-margin-top: 120px; }
 .day h2 .label { display: block; margin-bottom: 4px; }
 .time { flex: none; width: 9.5rem; white-space: nowrap; color: var(--muted); font: 400 .85rem/1.6 var(--mono); padding-top: 1px; }
@@ -294,7 +293,6 @@ figcaption { color: var(--muted); font-size: .88rem; margin-top: 10px; }
   .slot, .talk-row, .session-head { flex-direction: column; gap: 2px; }
   .name-list li { grid-template-columns: 1fr; gap: 2px; }
   .name-list span { text-align: left; }
-  .tabs a:last-child { margin-left: 0; }
 }
 
 @media print {
