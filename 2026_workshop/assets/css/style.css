@@ -79,6 +79,7 @@ ul, ol, dl { margin: 0; padding: 0; }
 .label a:hover { color: var(--ink); }
 .print-only { display: none; }
 .nw { white-space: nowrap; }
+.tt { display: inline-block; }  /* title halves around a colon: each wraps as a unit */
 h1, h2, h3, .row-name, .t-title, .row-title { text-wrap: balance; }
 p, li, dd, figcaption, .lead { text-wrap: pretty; }
 
@@ -223,7 +224,7 @@ aside .label:not(:first-child) { margin-top: 32px; }
 .talk-row { display: flex; gap: 16px; padding: 10px 0; border-top: 1px solid var(--rule); color: var(--text); text-decoration: none; }
 .talk-row:hover { background: var(--tint); }
 .what { display: flex; flex-direction: column; }
-.t-title { color: var(--ink); font-weight: 500; }
+.t-title { color: var(--ink); font-weight: 500; font-size: .92rem; }  /* same size as the Speakers/Posters list titles */
 .talk-row:hover .t-title { text-decoration: underline; text-underline-offset: 3px; }
 .t-who { color: var(--muted); font-size: .95rem; }
 
