@@ -478,3 +478,4 @@ a.ob-card:hover { border-color: var(--rule-strong); }
 /* let the pointer reach the hero photos (their tooltip carries the photo credit); buttons stay clickable */
 .hero-shade, .hero-center { pointer-events: none; }
 .hero-center a { pointer-events: auto; }
+.directions + .label { margin-top: 2.2rem; }  /* Venue: space between Rooms and Getting there */
