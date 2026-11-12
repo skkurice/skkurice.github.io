@@ -212,7 +212,7 @@ aside .label:not(:first-child) { margin-top: 32px; }
 .tabs a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .day { padding-top: 36px; scroll-margin-top: 120px; }
 .day h2 .label { display: block; margin-bottom: 4px; }
-.time { flex: none; width: 9.5rem; white-space: nowrap; color: var(--muted); font: 400 .85rem/1.6 var(--mono); padding-top: 1px; }
+.time { flex: none; width: 10.6rem; white-space: nowrap; color: var(--muted); font: 400 .85rem/1.6 var(--mono); padding-top: 1px; }
 .slot { display: flex; gap: 16px; padding: 12px 0; border-top: 1px solid var(--rule); color: var(--muted); }
 .slot-ceremony .what { color: var(--ink); font-weight: 500; }
 .session { border-top: 1px solid var(--rule-strong); margin-top: 18px; scroll-margin-top: 120px; }
