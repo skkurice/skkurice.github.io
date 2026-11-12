@@ -24,19 +24,7 @@
   </div>
 </header>
 <main>
-<header class="page-head"><div class="wrap"><h1>Venue</h1><p class="lead">Rice University, 6100 Main Street, Houston, TX 77005, USA</p></div></header><div class="wrap split split-even section-top"><div><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<div class="frame frame-map"><div id="campus-map" role="img" aria-label="Map of the Rice University campus with the two workshop buildings"></div></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script>(function (d) {
-  var m = L.map("campus-map", {scrollWheelZoom: false});
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(m);
-  d.pins.forEach(function (p) {
-    L.circleMarker([p.lat, p.lon], {radius: 9, color: "#fff", weight: 2, fillColor: "#111", fillOpacity: 1}).addTo(m)
-      .bindTooltip(p.label, {permanent: true, direction: "right", offset: [10, 0], className: "pin-label"});
-  });
-  m.fitBounds(d.bounds || d.pins.map(function (p) { return [p.lat, p.lon]; }));
-})({"bounds": [[29.7105, -95.4126], [29.7227, -95.3933]], "pins": [{"lat": 29.71985, "lon": -95.40262, "label": "Day 1 \u00b7 SST, Room 300"}, {"lat": 29.71441, "lon": -95.40687, "label": "Day 2 \u00b7 Anderson-Clarke Center"}]});</script></div>
+<header class="page-head"><div class="wrap"><h1>Venue</h1><p class="lead">Rice University, 6100 Main Street, Houston, TX 77005, USA</p></div></header><div class="wrap split split-even section-top"><div><div class="frame frame-map"><iframe src="https://www.google.com/maps/d/embed?mid=1nXYbPhXGflw5MFEOXlfoer1jMw41PHE&amp;ehbc=2E312F&amp;noprof=1&amp;hl=en&amp;ll=29.7166,-95.4040&amp;z=15" loading="lazy" title="Map"></iframe></div></div>
       <div><h2 class="label">Rooms</h2><dl class="directions"><div><dt>Day 1 · Thu, Dec 3</dt><dd><strong>Space Science and Technology Building (SST), Room 300</strong><br>North side of the campus, on Campanile Road (building 32 on the Rice campus map). <a class="ext" href="https://www.google.com/maps/search/?api=1&amp;query=Space+Science+and+Technology+Building,+Rice+University,+6100+Main+St,+Houston,+TX+77005" target="_blank" rel="noopener">Map</a></dd></div><div><dt>Day 2 · Fri, Dec 4</dt><dd><strong>Anderson-Clarke Center (Susanne M. Glasscock School of Continuing Studies)</strong><br>Enter the campus at Entrance 8 (University Boulevard at Stockton Drive); the building is the second on the left. Visitors can park in the Moody Visitor Lot near Entrance 8 (credit card only). <a class="ext" href="https://www.google.com/maps/search/?api=1&amp;query=Glasscock+School+of+Continuing+Studies,+6100+Main+St,+Houston,+TX+77005" target="_blank" rel="noopener">Map</a></dd></div></dl><h2 class="label">Getting there</h2><dl class="directions"><div><dt>From George Bush Intercontinental Airport (IAH)</dt><dd>IAH is Houston&#x27;s main international airport, north of the city. The drive to Rice University takes about 30⁠–⁠60 minutes, depending on traffic.</dd></div><div><dt>From William P. Hobby Airport (HOU)</dt><dd>HOU is Houston&#x27;s second airport, southeast of downtown and closer to campus. The drive to Rice University takes about 20⁠–⁠30 minutes.</dd></div><div><dt>Taxi or rideshare</dt><dd>Taxis, Uber, and Lyft are available at both airports. Use the address Rice University, 6100 Main Street.</dd></div><div><dt>Public transit</dt><dd>METRO buses run from both airports to downtown Houston. From downtown, the METRORail Red Line runs along Main Street and stops across from the main entrance of the Rice campus. Check current routes and times at <a href="https://www.ridemetro.org/">ridemetro.org</a>.</dd></div></dl></div></div>
 </main>
 <footer class="footer">
