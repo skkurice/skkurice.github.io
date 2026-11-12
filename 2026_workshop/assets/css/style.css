@@ -391,6 +391,13 @@ figcaption { color: var(--muted); font-size: .88rem; margin-top: 10px; }
 .src-list { list-style: none; padding: 0; display: grid; gap: 6px; }
 .small { font-size: .85rem; }
 .name-list .org-name a { white-space: nowrap; }
+/* Phones: fill each line before wrapping (balanced/pretty wrapping left short first lines such as "Department of") */
+@media (max-width: 700px) {
+  .row-title, .row-meta, .row-name, .row .tba { text-wrap: wrap; }
+}
+@media (min-width: 360px) and (max-width: 700px) {
+  .row-meta .uni-name { white-space: nowrap; }  /* keep "Sungkyunkwan University" / "Rice University" on one line (too wide below 360px) */
+}
 @media (max-width: 520px) {
   .profile-head { flex-direction: column; align-items: flex-start; gap: 16px; }
   .photo-xl { width: 10rem; height: 12.5rem; }
