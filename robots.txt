@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://skkurice.github.io/2026_workshop/sitemap.xml
